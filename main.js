@@ -60,9 +60,9 @@ ipcMain.on(
 			"--ffmpeg-location",
 			ffmpegPath,
 			"-f",
-			"bv*+ba/b",
-			"--merge-output-format",
-			"mp4",
+			"bestvideo*+bestaudio/best",
+			"--recode-video",
+			"mov",
 			"-P",
 			outputPath,
 			url
