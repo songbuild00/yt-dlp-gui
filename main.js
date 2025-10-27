@@ -61,6 +61,8 @@ ipcMain.on(
 			ffmpegPath,
 			"-f",
 			"bestvideo*+bestaudio/best",
+			"--cookies-from-browser",
+			"chrome",
 			"--recode-video",
 			"mov",
 			"-P",
